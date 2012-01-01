@@ -1,0 +1,56 @@
+package edu.stevens.mp3player;
+
+import edu.stevens.model.MP3Info;
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageButton;
+
+public class PlayerActivity extends Activity {
+	private ImageButton beginBtn;
+	private ImageButton pauseBtn;
+	private ImageButton stopBtn;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+
+		super.onCreate(savedInstanceState);
+		Intent intent = getIntent();
+		MP3Info info = (MP3Info) intent.getSerializableExtra("mp3info");
+
+		beginBtn = (ImageButton) findViewById(R.id.begin);
+		pauseBtn = (ImageButton) findViewById(R.id.pause);
+		stopBtn = (ImageButton) findViewById(R.id.stop);
+
+		setContentView(R.layout.player);
+	}
+
+	private OnClickListener beginListener = new OnClickListener() {
+
+		@Override
+		public void onClick(View v) {
+			
+
+		}
+	};
+
+	private OnClickListener pauseListener = new OnClickListener() {
+
+		@Override
+		public void onClick(View v) {
+			
+
+		}
+	};
+
+	private OnClickListener stopListener = new OnClickListener() {
+
+		@Override
+		public void onClick(View v) {
+			
+
+		}
+	};
+}

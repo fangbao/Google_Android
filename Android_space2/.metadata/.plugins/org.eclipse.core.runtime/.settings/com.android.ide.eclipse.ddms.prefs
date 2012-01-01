@@ -1,0 +1,14 @@
+#Sun Jan 01 18:19:46 EST 2012
+com.android.ide.eclipse.ddms.logcat.level=20
+logcat.view.colsize.Text=630
+logcat.view.colsize.Level=36
+logcat.view.colsize.Application=156
+logcat.view.colsize.PID=60
+logcat.view.colsize.Tag=114
+com.android.ide.eclipse.ddms.logcat.tag=76
+logcat.view.colsize.Time=156
+com.android.ide.eclipse.ddms.logcat.time=124
+com.android.ide.eclipse.ddms.logcat.message=782
+eclipse.preferences.version=1
+com.android.ide.eclipse.ddms.logcat.filters=System.out\:2\:System.out|
+com.android.ide.eclipse.ddms.logcat.pid=44

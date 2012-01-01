@@ -1,0 +1,7 @@
+package edu.stevnes.xml;
+
+import org.xml.sax.helpers.DefaultHandler;
+
+public class MP3ListContentHandler extends DefaultHandler {
+
+}

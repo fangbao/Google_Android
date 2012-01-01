@@ -1,0 +1,89 @@
+package edu.stevens.mp3player;
+
+import java.io.StringReader;
+import java.util.ArrayList;
+import java.util.List;
+import javax.xml.parsers.SAXParserFactory;
+import org.xml.sax.InputSource;
+import org.xml.sax.XMLReader;
+import android.app.ListActivity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import edu.stevens.download.HttpDownloader;
+import edu.stevens.model.MP3Info;
+import edu.stevnes.xml.MP3ListContentHandler;
+
+public class MP3ListActivity extends ListActivity {
+    
+	private static final int UPDATE=1;
+	private static final int ABOUT=2;
+
+	
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+    }
+    
+    
+    /**
+     * after user clicking the menu, the method will be called
+     */
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		menu.add(0, UPDATE, 1, R.string.mp3list_update);
+		menu.add(0, ABOUT, 2, R.string.mp3list_about);
+
+		return super.onCreateOptionsMenu(menu);
+	}
+
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		if(UPDATE==item.getItemId()){//user clicked the 'update' item
+			String xml=downloadXML("http://192.168.1.104:8082/mp3/resources.xml");
+			parse(xml);
+			
+			
+		}else if(ABOUT==item.getItemId()){//user clicked the 'about' item
+			
+		}
+		
+		
+		return super.onOptionsItemSelected(item);
+	}
+    
+	
+	private String downloadXML(String urlStr){
+		HttpDownloader downloader=new HttpDownloader();
+		String result=downloader.download(urlStr);
+		return result;
+	}
+	
+	private List<MP3Info> parse(String xmlStr){
+		SAXParserFactory factory=SAXParserFactory.newInstance();
+		List<MP3Info> infos=null;
+		System.out.println("hello");
+		try {
+			XMLReader reader=factory.newSAXParser().getXMLReader();
+			
+			infos=new ArrayList<MP3Info>();
+			MP3ListContentHandler handler=new MP3ListContentHandler(infos);
+			reader.setContentHandler(handler);
+			reader.parse(new InputSource(new StringReader(xmlStr)));
+			
+			System.out.println(infos.size());
+			for(MP3Info info:infos){
+				System.out.println(info);
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		return infos;
+	}
+    
+}

@@ -1,0 +1,71 @@
+package edu.stevens.handler;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.ProgressBar;
+
+public class HandlerActivity extends Activity {
+    /** Called when the activity is first created. */
+	
+	private ProgressBar pb;
+	private Button btn;
+	
+	private Handler handler=new Handler(){
+
+		@Override
+		public void handleMessage(Message msg) {
+			pb.setProgress(msg.arg1);
+			if(msg.arg1<100)
+				handler.post(updateThread);
+		}
+		
+	};
+	
+	Runnable updateThread=new Runnable() {
+		
+		int i=0;
+		@Override
+		public void run() {
+			System.out.println("begin thread");
+			i+=10;
+			
+			Message msg=handler.obtainMessage();
+			
+			msg.arg1=i;
+			
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			
+			handler.sendMessage(msg);
+		}
+	};
+	
+	
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        
+        pb=(ProgressBar)findViewById(R.id.progressBar1);
+        btn=(Button)findViewById(R.id.button1);
+        
+        btn.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				pb.setVisibility(View.VISIBLE);
+				handler.post(updateThread);
+			}
+		});
+    }
+    
+
+}

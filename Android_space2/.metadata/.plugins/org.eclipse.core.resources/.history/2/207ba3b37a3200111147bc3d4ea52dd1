@@ -1,0 +1,50 @@
+package edu.stevens.progressbar;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.ProgressBar;
+
+public class ProgressBarActivity extends Activity {
+    
+	private ProgressBar pb1;
+	private ProgressBar pb2;
+	private Button btn1;
+	private int i=0;
+	
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        
+        pb1=(ProgressBar)findViewById(R.id.pb1);
+        pb2=(ProgressBar)findViewById(R.id.pb2);
+        btn1=(Button)findViewById(R.id.btn1);
+        
+        btn1.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				if(0==i){
+					
+					pb1.setVisibility(View.VISIBLE);
+					pb2.setVisibility(View.VISIBLE);
+					
+				}else if(i<100){
+					pb1.setProgress(i);
+					pb1.setSecondaryProgress(i);
+					
+				}else{
+					pb1.setVisibility(View.GONE);
+					pb2.setVisibility(View.GONE);
+				}				
+				i+=10;				
+			}
+		});
+        
+    }
+    
+    
+}

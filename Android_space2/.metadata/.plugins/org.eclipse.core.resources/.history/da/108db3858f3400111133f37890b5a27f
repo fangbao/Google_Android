@@ -1,0 +1,5 @@
+package edu.stevens.model;
+
+public class MP3Info {
+
+}

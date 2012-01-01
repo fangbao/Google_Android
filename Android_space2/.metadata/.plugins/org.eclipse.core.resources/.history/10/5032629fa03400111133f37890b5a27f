@@ -1,0 +1,26 @@
+package edu.stevens.mp3player.service;
+
+import edu.stevens.model.MP3Info;
+import android.app.Service;
+import android.content.Intent;
+import android.os.IBinder;
+
+public class DownloadService extends Service {
+
+	@Override
+	public IBinder onBind(Intent intent) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int onStartCommand(Intent intent, int flags, int startId) {
+		// TODO Auto-generated method stub
+		MP3Info info=(MP3Info)intent.getSerializableExtra("mp3info");
+		
+		System.out.println("service----->"+info);
+		return super.onStartCommand(intent, flags, startId);
+	}
+
+	
+}
