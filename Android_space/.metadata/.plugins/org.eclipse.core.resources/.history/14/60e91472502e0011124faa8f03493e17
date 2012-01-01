@@ -1,0 +1,24 @@
+package edu.stevens.intent.activity;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class SecondActivity extends Activity
+{
+	private TextView secondTxt;
+	@Override
+	protected void onCreate(Bundle savedInstanceState)
+	{
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.second);
+		Intent intent=getIntent();
+		Bundle bundle=intent.getExtras();
+		String str=bundle.getString("str");
+		secondTxt=(TextView)findViewById(R.id.secondTxt);
+		secondTxt.setText(str);
+		
+	}
+}

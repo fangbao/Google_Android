@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.core.filesystem,1.2.0.v20090507,"org.eclipse.core.filesystem",1324436066859
+started,bundle,org.eclipse.ltk.core.refactoring,3.5.0.v20090513-2000,"org.eclipse.ltk.core.refactoring",1324436066859
+started,bundle,org.eclipse.ltk.ui.refactoring,3.4.100.v20090604,"org.eclipse.ltk.ui.refactoring",1324436066859
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1324436254000
+started,bundle,org.eclipse.equinox.p2.ui,1.0.100.v20090527-1812,"org.eclipse.equinox.p2.ui",1324436262250
+started,bundle,org.eclipse.equinox.p2.ui.sdk,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.ui.sdk",1324436262281
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1324436262640
+started,bundle,org.eclipse.equinox.p2.updatesite,1.0.100.v20090525,"org.eclipse.equinox.p2.updatesite",1324436263468
+error,log,,,"Operation details",1324436280140
+error,log,,,"Operation details",1324436280156
+error,log,,,"Operation details",1324436280171
+error,log,,,"Operation details",1324436280250
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1324436293500
+executed,command,org.eclipse.equinox.p2.ui.sdk,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.ui.sdk.install",1324436293515
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1324436294671
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1324436296671
+closed,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1324436296843
+stopped,bundle,org.eclipse.mylyn.ide.ant,3.2.0.v20090617-0100-e3x,"org.eclipse.mylyn.ide.ant",1324436306468
+stopped,bundle,org.eclipse.ant.ui,3.4.0.v20090520,"org.eclipse.ant.ui",1324436306468
+stopped,bundle,org.eclipse.compare.win32,1.0.0.I20090430-0408,"org.eclipse.compare.win32",1324436306468
+stopped,bundle,org.eclipse.mylyn.java.tasks,3.2.0.v20090617-0100-e3x,"org.eclipse.mylyn.java.tasks",1324436306468
+stopped,bundle,org.eclipse.mylyn.java.ui,3.2.0.v20090617-0100-e3x,"org.eclipse.mylyn.java.ui",1324436306468
+stopped,bundle,com.android.ide.eclipse.adt,10.0.0.v201102162101-104271,"com.android.ide.eclipse.adt",1324436306468
+stopped,bundle,org.eclipse.jdt.junit,3.5.0.v20090526-2000,"org.eclipse.jdt.junit",1324436306468
+stopped,bundle,org.eclipse.jdt.apt.ui,3.3.200.v20090528-1135,"org.eclipse.jdt.apt.ui",1324436306468

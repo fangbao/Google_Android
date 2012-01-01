@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="edu.stevens.activity.R.id"/>
+<fullyQualifiedTypeName name="android.text.Html"/>
+<fullyQualifiedTypeName name="edu.stevens.button.activity.R.id"/>
+<fullyQualifiedTypeName name="android.net.Uri"/>
+<fullyQualifiedTypeName name="edu.stevens.intent.activity.R.layout"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="edu.stevens.intent.activity.R.id"/>
+<fullyQualifiedTypeName name="edu.stevens.intent.activity.SecondActivity"/>
+<fullyQualifiedTypeName name="android.os.Bundle"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="edu.stevens.intent.activity.MainActivity"/>
+<fullyQualifiedTypeName name="edu.stevens.status.R.drawable"/>
+<fullyQualifiedTypeName name="android.provider.Settings.System"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="android.app.PendingIntent"/>
+<fullyQualifiedTypeName name="android.app.NotificationManager"/>
+<fullyQualifiedTypeName name="edu.stevens.status.R.id"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="edu.stevens.status.MainActivity"/>
+<fullyQualifiedTypeName name="edu.stevens.status.StatusService"/>
+<fullyQualifiedTypeName name="edu.stevens.status.R.layout"/>
+<fullyQualifiedTypeName name="android.app.Notification"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="edu.stevens.broadcast.R.id"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="edu.stevens.receiver.SecondReceiver"/>
+<fullyQualifiedTypeName name="android.content.IntentFilter"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.ecf.provider.filetransfer,3.0.0.v20090604-1131,"org.eclipse.ecf.provider.filetransfer",1324436439359
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1324436439671
+error,log,,,"Operation details",1324436459937
+error,log,,,"Operation details",1324436459937
+error,log,,,"Operation details",1324436459937
+error,log,,,"Operation details",1324436460062
+error,log,,,"Operation details",1324436566203
+error,log,,,"Operation details",1324436566218
+error,log,,,"Operation details",1324436609203
+error,log,,,"Operation details",1324436609218
+error,log,,,"Operation details",1324436631328
+error,log,,,"Operation details",1324436639937
+error,log,,,"Operation details",1324436639953
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1324436657218
+executed,command,org.eclipse.equinox.p2.ui.sdk,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.ui.sdk.install",1324436657218
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1324436659734
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1324436660015
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1324436660687
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1324436661656
+closed,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1324436661843
+started,bundle,org.eclipse.core.filesystem,1.2.0.v20090507,"org.eclipse.core.filesystem",1324436662015
+stopped,bundle,org.eclipse.mylyn.ide.ant,3.2.0.v20090617-0100-e3x,"org.eclipse.mylyn.ide.ant",1324436662218
+stopped,bundle,org.eclipse.ant.ui,3.4.0.v20090520,"org.eclipse.ant.ui",1324436662218
+stopped,bundle,org.eclipse.compare.win32,1.0.0.I20090430-0408,"org.eclipse.compare.win32",1324436662218
+stopped,bundle,org.eclipse.mylyn.java.tasks,3.2.0.v20090617-0100-e3x,"org.eclipse.mylyn.java.tasks",1324436662218

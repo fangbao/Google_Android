@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.update.scheduler,3.2.200.v20081127,"org.eclipse.update.scheduler",1324436433046
+os,sysinfo,,,"win32",1324436433046
+arch,sysinfo,,,"x86",1324436433046
+ws,sysinfo,,,"win32",1324436433046
+locale,sysinfo,,,"zh_CN",1324436433046
+processors,sysinfo,,,"2",1324436433046
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1324436433046
+java.runtime.version,sysinfo,,,"1.6.0_22-b04",1324436433046
+java.specification.name,sysinfo,,,"Java Platform API Specification",1324436433046
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1324436433046
+java.specification.version,sysinfo,,,"1.6",1324436433046
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1324436433046
+java.version,sysinfo,,,"1.6.0_22",1324436433046
+java.vm.info,sysinfo,,,"mixed mode, sharing",1324436433046
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1324436433046
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1324436433046
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1324436433046
+java.vm.specification.version,sysinfo,,,"1.0",1324436433046
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1324436433046
+java.vm.version,sysinfo,,,"17.1-b03",1324436433046
+started,bundle,org.eclipse.equinox.p2.ui,1.0.100.v20090527-1812,"org.eclipse.equinox.p2.ui",1324436438921
+started,bundle,org.eclipse.equinox.p2.ui.sdk,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.ui.sdk",1324436438953
+started,bundle,org.eclipse.ecf.identity,3.0.0.v20090604-1131,"org.eclipse.ecf.identity",1324436439046
+started,bundle,org.eclipse.ecf,3.0.0.v20090604-1131,"org.eclipse.ecf",1324436439312
+started,bundle,org.eclipse.ecf.provider.filetransfer.httpclient,3.0.0.v20090604-1131,"org.eclipse.ecf.provider.filetransfer.httpclient",1324436439343
